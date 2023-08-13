@@ -1,0 +1,4 @@
+**AuthC**
+
+Specification Brief
+
