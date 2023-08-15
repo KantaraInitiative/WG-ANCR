@@ -1,4 +1,4 @@
-**Transparency Trust Metrics**
+**Transparency Trust Metrics - Transparency Performance Indicators (TPIs)**
 
 Editors: Sharon Polsky, Mark Lizar
 
@@ -35,23 +35,23 @@ Every publication, in every domain, is capable of improvement. Kantara welcomes 
 ![Rectangle 2](RackMultipart20230814-1-ayl9sl_html_49ac0cb03196381.gif)
 
 Copyright: The content of this document is copyright of Kantara Initiative, Inc.
- © 2022 Kantara Initiative, Inc.
+ © 2023 Kantara Initiative, Inc.
 
 # Introduction
 
-Trust Performance Indicator's (TPI's), also referred to here as Transparency Performance Indicators, are used to capture the performance of digital transparency measuring how dynamic the performance of transparency is for digital services.
+Trust Performance Indicators (TPIs), also referred to here as Transparency Performance Indicators, are used to capture the performance of digital transparency measuring how dynamic the performance of transparency is for digital services.
 
-These TPI's are designed to quickly assess the operational capacity by measuring the performance of publicly required digital service information. Checking digital components of authority and security to assure and assess the validity of privacy.
+These TPIs are designed to quickly assess the operational capacity by measuring the performance of publicly required digital service information. The TPIs assess the digital components of authority and security to assure the access, validity, and availability of privacy.
 
-Work pre-ceding these TPI's developed a consent receipt, which is a record that can be used to capture the state of trust before a session, to capture surveillance context, and wether notice was provided before the technical session is establish or after, to capture the providence of wether consent is implied or expressed dynamically.
+Work at Kantara preceding these TPIs developed a consent receipt. It is a record that can be used to capture the state of trust before a session, to capture surveillance context, and capture whether notice was provided before the technical session is established, at the time, or after, and to capture the whether the providence of consent is implied or expressed dynamically.
 
-As there is no assessment that accounts for the capability for the use of consent receipts, brought by the service user to provide source, and session history. But there is in law, implied and expressed, consent states, which are commonly inferred in digital privacy and security contexts.
+There is no assessment that accounts for the capability in the use of consent receipts, in particular for the service user to record source, and session history. But there is in law, implied and expressed, consent states, which are commonly inferred in digital privacy and security contexts.
 
-Most assessment for conformance of privacy information or services are mapped to analogue legal requirements which measure response times in days, out of technical context.  TPI's all measure how dynamic privacy service information is, and include in the rating system a value which is indicated as a +1. As a result, TPI's include a Dynamic, in context performance indicator, for active state notice and privacy controls.
+Most assessment for conformance of privacy information or services are mapped to analogue legal requirements which measure response times in days, out of technical context.  TPIs measure how dynamic privacy service information is, and include in the rating system a value which is indicated as a +1. The result is a dynamic, in context performance indicator, that facilitates an active state notice and privacy controls.
 
-TPI's are recorded with a Notice Record, fully filled in, useable as a Controller Credential, which is used to generate a Consent Receipt.[1] This specification introduces a standardized record format for the capture of attributes that are required by law for the legal and trustworthy processing of personal identifiers.
+TPIs are recorded with a Notice Record, fully filled in, useable as a Controller Credential, which is used to generate a Consent Receipt.[1] This specification introduces a standardized record format for the capture of attributes that are required by law for the legal and trustworthy processing of personal identifiers.
 
-The format is defined with the [ISO/IEC 29100](https://standards.iso.org/ittf/PubliclyAvailableStandards/c073722_ISO_IEC%2029100_2011_Amd%201_2018%20(EN).zip) security and privacy techniques framework. This format is used to collect identifier and session based attributes, notice, notification, and disclosure text mapped directly to the analogue (brick and mortar) legal requirements. We present here that standardized TPI creation process and how it can be used to complement, in fact necessarilly precede, (any) identifier creation workflow.
+The format is defined with the [ISO/IEC 29100](https://standards.iso.org/ittf/PubliclyAvailableStandards/c073722_ISO_IEC%2029100_2011_Amd%201_2018%20(EN).zip) security and privacy techniques framework. This format is used to collect identifier and session based attributes, notice, notification, and disclosure text mapped directly to the analogue (brick and mortar) legal requirements. We present here the standardized TPI creation process and how it can be used to complement, in fact necessarilly precede, (any) identifier creation workflow.
 
 The Notice Record format can also be used to measure conformance with the ISO/IEC 29184 Online privacy notice and consent standard (2020), in which, the [Consent Notice Receipt](https://kantarainitiative.org/download/7902/) is provided in Annex B.
 
@@ -59,13 +59,13 @@ The use of the associated notices, receipts and records dramatically improve the
 
 This specification is offered as a contribution to the ISO/IEC SC27 WG5 body of work, as it extends the ISO/IEC 29100 privacy and security framework into operational trust applications.
 
-The Notice Record, generated from TPI's, enables operational 'online' transparency by the use of the controls in ISO/IEC 29184. This can be further evidenced with an anchored notice and mirrored (digitally twinned) notice consent receipts [again ISO/IEC 29184, Appendix B], again generated from a TPI Notice Record.
+The Notice Record, generated from TPIs, enables operational 'online' transparency by the use of the controls in ISO/IEC 29184. This can be further evidenced with an anchored notice and mirrored (digitally twinned) notice consent receipts [again ISO/IEC 29184, Appendix B], again generated from a TPI Notice Record.
 
 # Why was this specification written?
 
-TPI's aim to help standardize digital transparency and dramatically improve the safety, security, and usability of digital transparency for people. It does so by providing a set of metrics to quickly assess if and how digital privacy is operating at the moment.
+TPIs aim to help standardize digital transparency and dramatically improve the safety, security, and usability of digital transparency for people. It does so by providing a set of metrics to quickly assess if and how digital privacy is operating at the moment.
 
-Currently, there is no way for people to see who is tracking them and how digitally exposed people are in context. Data control, access, and privacy rights requests and response time, TPI's indicate if the digital information provided upon contact with a digital service is capable of meeting this basic requirement and capable of dynamic data access and controls.
+Currently, there is no way for people to see who is tracking them and how digitally exposed people are in context. Data control, access, and privacy rights requests and response time, TPIs indicate if the digital information provided upon contact with a digital service is capable of meeting this basic requirement and capable of dynamic data access and controls.
 
 Digital transparency around why, who, and where behind a data request is as important as security and privacy of identifiers and attributes. Without standardized digital transparency it is difficult if not impossible to make decisions about the creation and subsequent necessary, tracking and monitoring of personal data and digital identifiers.
 
@@ -73,27 +73,23 @@ The TPIs are a step to where people have the insights to exercise access control
 
 # Why Transparency Performance Indicator's?
 
-TPI's provide a way to quickly see what digital privacy and/or security measures are in place, and in line with human, legal and analogue requirements for the human in context of operating a digital service.
+TPIs provide a way to quickly see what digital privacy and/or security measures are in place, and in line with human, legal and analogue requirements for the human in context of operating a digital service.
 
-TPI's capture the digital identifiers and meta data to measure the performance of digital transparency for conformance to standards, compliance to regulations, and for self-sovereign assessment
+TPIs capture digital identifiers and meta data to measure the performance of digital transparency for conformance to standards, compliance to regulations, and for self-sovereign assessment, business, operational, legal, technical, and social dimensions and considerations. Through the implementation and capture of records for legal proof of notice (shared knowledge and understanding), the TPIs set the stage (allow to follow in the workflow) for digital consent with a receipts. These receipts can then be used by people to provide their own evidence of notice and records.
 
-business, operational, legal, technical, and social dimensions and considerations. Through the implementation and capture of records for legal proof of notice (share knowledge and understanding), the TPI's set the stage (allow to follow in the workflow) for digital consent with a receipts. These receipts can then be used by people to provide their own evidence of notice and records.
+4 TPIs in this document specify the capture of notification meta-data and measure its performance for digital consent. The TPIs provide human readable digital representations for digital transparency, and when required digital consent as well as other justifications or requirements for processing.
 
-4 TPI's in this document specify the capture of notification meta-data and measure its performance for digital consent.
+The TPIs presented are captured in a Notice Record, then assessed for conformance.
 
-human readable digital representations of physical/human requirements for digital transparency, and when required digital consent as well as other justifications or requirements for processing.
-
-The TPI's presented are captured in a Notice Record, then assessed for conformance
-
-{note: this is out of scope} provide provide a record, that can then be used to "anchor" the digital identity relationship with the organization, creating a basis and foundation for higher levels of digital transparency assurance. [2]
+{note: this is out of scope} Use the notice receipt to create a personal data record, that can then be used to "anchor" the digital identity relationship with the organization, creating a basis and foundation for higher levels of digital transparency assurance and values of interactions. [2]
 
 # What should you expect to find in this document?
 
-There 4 TPI's specified here focus on the first / initial point of contact, and the transparency for public accessible digital services. This is publicly required information to provided, without requiring identification, authentication or authorization.
+The 4 TPIs specified here focus on the first/initial point of contact, and the transparency for public accessible digital services. This is publicly required set of information that MUST be provided, without requiring identification, authentication or authorization of the person.
 
-TPI Indicators here are for Digital Transparency, Level of Trust Assurance 0. [Ref-DTL's]
+TPI Indicators here are for Digital Transparency, Level of Trust Assurance 0. [Ref-DTL's] (self service and public (though legally required) without verification or validation).
 
-The TPI's here are used to assess session based data capture and self asserted information by organizations.
+The TPIs here are used to assess session based data capture and self asserted information by organizations.
 
 TPI 1 - Measuring the Timing of Notice:
 
@@ -119,7 +115,7 @@ This TPI captures the (Secure Socket Layer/Transport Layer Security) SSL/TLS ([e
 
 move for intro text
 
-TPI's are captured in sequence;
+TPIs are captured in sequence;
 
 1. TPI measuring the point when the individual is notified versus when personal information/digital identifiers are collected and processed. Capturing the timing of notice presentation in relation to first data capture
 
@@ -129,7 +125,7 @@ TPI's are captured in sequence;
 
 4.TPI validating the cybersecurity information versus the digital transparency information capturing the SSL certificate or keys and its associated meta-data.
 
-Combined, these TPI's provide an overall Indication of the operational state of digital privacy.
+Combined, these TPIs provide an overall Indication of the operational state of digital privacy.
 
 # TPI Methodologies
 
@@ -228,9 +224,9 @@ Table 3 : Transparency Performance Indicator Record Rating Example
 
 # Summary
 
-In summary, Transparency Performance Indicators, TPI's are specified here for people to use depending on context, location, security, and other out of session elements. TPI's are used to determine with one's own soverign reasoning whether to trust a service, not an external framing, opinion or forced default.
+In summary, Transparency Performance Indicators, TPIs are specified here for people to use depending on context, location, security, and other out of session elements. TPIs are used to determine with one's own soverign reasoning whether to trust a service, not an external framing, opinion or forced default.
 
-These TPI's use open standards, with an open license specified for people to be able to use and create records they can own and keep across and independently of service providers.
+These TPIs use open standards, with an open license specified for people to be able to use and create records they can own and keep across and independently of service providers.
 
 TPI 1 is a measure of trust, so that when asked, "Do you trust (accept) a service", you necessarily know who is processing your data before, during or after." Overwhelimingly people indicate trust would be higher. if notified prior to data capture, which only makes sense.
 
