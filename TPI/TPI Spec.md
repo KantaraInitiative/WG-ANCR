@@ -99,21 +99,21 @@ Note: This is the most common legislated privacy element in the world, required 
 
 TPI 2 - Measures Required Data Elements
 
-This TPI capatures data elements required for all data processing (except when legally regulated otherwise [3] derogation). In "all" cases a Notice of who is processing your data, who is a accountable and the privacy contact information for access to personal information must be provided.
+This TPI capatures (or not) the data elements required for data processing (except when legally regulated otherwise [3] derogation). In "all" cases a Notice of who is processing your data, who is a accountable and the privacy contact information for access to personal information MUST be provided.
 
-Notice of who is processing your data is required for all legal justifications for processing personal data in privacy law, as well as a fundamental security requirement, to identify the legal entity, in some cases including all beneficial owners, and the accountable person(s).
+Notice of who is processing your data is required for all legal justifications for processing personal data in privacy law. It is also a fundamental security requirement, namely to identify the legal entity, and in some cases all beneficial owners, and the accountable person(s) involved in an interaction.
 
 TPI 3 - Measure of Transparency Accessibility
 
-This TPI measures the performance of transparency accessibility by capturing how the availability of the required information in TPI 2. For example, is the information presented in a pop-up notice, or is it required to click a link, e.g. to a standard transparency/privacy policy, is it the first screen or is it at a the bottom of a multi-screen display (with links not highlighted).
+This TPI measures the availability and access to the required information in TPI 2. For example, is the information presented in a pop-up notice, or is it required to click a link, e.g. to a standard transparency/privacy policy, is it the first screen or is it at a the bottom of a multi-screen display (e.g., with "dark patterns" such as links not highlighted).
 
 TPI 4 - Measures security information integrity
 
-This TPI captures the (Secure Socket Layer/Transport Layer Security) SSL/TLS ([e.g. 1.3](https://datatracker.ietf.org/doc/rfc8446/)) certificate or security keys ([e.g. JOSE](https://datatracker.ietf.org/group/jose/about/)) to compare its meta-data against the required information in TPI 2. This is very much along the lines of [Certificate Transparency](https://certificate.transparency.dev/) but looking specifically at whether the policies cover the Notice, e.g. does the SSL certificate Organization Unit field and Jurisdiction fields match the captured legal entity information, how does the policy and jurisdiction here related to other beneficial entities. Importantly does this align with the policy expectations of the person.
+This TPI captures the (Secure Socket Layer/Transport Layer Security) SSL/TLS ([e.g. 1.3](https://datatracker.ietf.org/doc/rfc8446/)) certificate or security keys ([e.g. JOSE](https://datatracker.ietf.org/group/jose/about/)) to compare its meta-data against the required information in TPI 2. This is very much along the lines of [Certificate Transparency](https://certificate.transparency.dev/) but looking specifically at whether the policies cover the Notice, e.g. does the SSL certificate Organization Unit field and Jurisdiction fields match the captured legal entity information, how does the policy and jurisdiction here relate to other beneficial entities. Importantly does this align with the policy expectations of the person.
 
-# TPI Metrics
+# TPI Metrics and Use
 
-move for intro text
+Each of the TPIs can be measured to determine the level of performance for each of the indicators. 
 
 TPIs are captured in sequence;
 
