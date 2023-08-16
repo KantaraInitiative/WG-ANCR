@@ -1,4 +1,4 @@
-**ANCR-Consensus-Protocol** (first draft)
+**ANCR-Operating-Consensus-Protocol** 
 
 ANCVR-Code of pratice engineering requires the implementation of the consensus driven collaboration protocol in the ANCR WG to be followed technically in Git-Hub.  Iterating on a ANCR-Consensus-Protocol as an ongoing action to build the tools and shared knowledge to engineer with this governance framework. 
 
