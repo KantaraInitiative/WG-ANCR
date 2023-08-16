@@ -15,12 +15,13 @@ There are a number of well known challenges to digital security and privacy issu
 * Digital transparency over the impact of choices/what people consent too 
 
 **Currently in OAuth**
-PAR - Push Authorisation Request
-RAR - Rich Authoritsation Request
+* PAR - Push Authorisation Request
+* RAR - Rich Authoritsation Request
 
 **Proposed**
-PTR - Pull Transparency Request 
-to begin the flow - generating a notice receipt from PII Controller credential generating a proof of notice claim. Using this digital credential to return claims, along with standardized digital notice and consent.  In this way enabling the PII Principle to be an issuer,  to enable trust, through control and the ability to dynamically provide and manage consent in and by context.   
+* PTR - Pull Transparency Request 
+
+PTR to start the authorization flow, generating a notice receipt from PII Controller credential generating a proof of notice claim. Using this digital credential to return claims, along with standardized digital notice and consent.  In this way enabling the PII Principle to be an issuer,  to enable trust, through control and the ability to dynamically provide and manage consent in and by context.   
 
 
 **Solution Architecture**
