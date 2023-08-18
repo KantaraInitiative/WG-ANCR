@@ -39,24 +39,25 @@ PTR to start the authorization flow, generating a notice receipt from PII Contro
 OPEN ID using TS-116 Can Digital Credential (being piloted by the SCC this summer)  to publish/produce an example
 
 **References**
+[Transparency Peformance Indicators v0.6](TPI/ANCR-TPI-Conformity Specefication v0.6.docx)  - ANCR GIT 
+
 DIACC SiG, digital governance interoperabilty for wallets, produced - "[adequacy-of-identity-governance-transparency](adequacy-of-identity-governance-transparency)" AuthC: Transparency and Consent, notice, notification and disclosure requirements, reviewed against frameworks.  
 
 Currently in digital identity management the  Authorization Server Obtains End-User Consent/Authorization
 Once the End-User is authenticated, this proposes an extension for these notice points, for
 
-
 OpenID Reference for extension: *Authorization Server Obtains End-User Consent/Authorization*
 Once the End-User is authenticated, the Authorization Server MUST obtain an authorization decision before releasing information to the Relying Party. When permitted by the request parameters used, this MAY be done through an interactive dialogue with the End-User that makes it clear what is being consented to or by establishing consent via conditions for processing the request or other means (for example, via previous administrative consent). Sections 2 and 5.3 describe information release mechanisms.
 https://openid.net/specs/openid-connect-core-1_0.html#Consent
 
-Background Research Reference
+**Background Reference Surveillance Trust Use Case**
 [Towards A Framework Of Contextual Integrity
 Legality, trust and compliance of CCTV signage]([url](https://www.taylorfrancis.com/chapters/edit/10.4324/9780203141625-23/towards-framework-contextual-integrity-mark-lizar-gary-potter))
-By Mark Lizar, Gary Potter  Book Eyes Everywhere Edition1st Edition, First Published2011 Imprint Routledge, Pages14 eBook ISBN9780203141625
+By Mark Lizar, Gary Potter  Book Eyes Everywhere Edition1st Edition, First Published2011 Imprint Routledge, Pages14 eBook ISBN9780203141625 https://www.taylorfrancis.com/chapters/edit/10.4324/9780203141625-23/towards-framework-contextual-integrity-mark-lizar-gary-potter
 
 
 **Glossary**
-
+[ANCR Record Framework Specification]([url](https://kantara.atlassian.net/wiki/spaces/WA/pages/114098237/ANCR+Record+Framework+for+PII+Credentials)) references, inlclude 3 cross referenced mappings for those terms, via CoE 108+, GDPR, and ISO/IEC 29100,  
 
 
 
