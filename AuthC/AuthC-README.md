@@ -19,7 +19,7 @@ There are a number of well known challenges to digital security and privacy issu
 * RAR - Rich Authoritsation Request
 
 **Proposed**
-* PTR - Pull Transparency Request 
+* PTR - Pull Transparency Credential Request, using 2FCN (Two Factor Concentric Notice) (sequence) as opposed to MFA, discover is through engagements, in which notice, notifications, are reqjuired, 
 
 PTR to start the authorization flow, generating a notice receipt from PII Controller credential generating a proof of notice claim. Using this digital credential to return claims, along with standardized digital notice and consent.  In this way enabling the PII Principle to be an issuer,  to enable trust, through control and the ability to dynamically provide and manage consent in and by context.   
 
@@ -41,12 +41,12 @@ OPEN ID using TS-116 Can Digital Credential (being piloted by the SCC this summe
 **References**
 [Transparency Peformance Indicators v0.6](TPI/ANCR-TPI-Conformity Specefication v0.6.docx)  - ANCR GIT 
 
-DIACC SiG, digital governance interoperabilty for wallets, produced - "[adequacy-of-identity-governance-transparency](adequacy-of-identity-governance-transparency)" AuthC: Transparency and Consent, notice, notification and disclosure requirements, reviewed against frameworks.  
+DIACC SiG, digital governance interoperabilty for wallets, produced - "[adequacy-of-identity-governance-transparency](adequacy-of-identity-governance-transparency)" AuthC: Transparency and Consent, notice, notification and disclosure requirements, reviewed against frameworks.   Proposed as notice elemenets that can be  notarized with a certified Digital Privacy/Surveillance Officer/Operator Credential, 
 
-Currently in digital identity management the  Authorization Server Obtains End-User Consent/Authorization
-Once the End-User is authenticated, this proposes an extension for these notice points, for
+"Editorial Note: Currently in digital identity management the  Authorization Server Obtains End-User Consent/Authorization
+Once the End-User is authenticated. As an alternative AuthC presents a notice signalling protocol  extension for the notice points references in the DIACC paper, according to context, and levels of Transparency Risk Assurance required to manage liability to mitigate risks, and enable a much more robust and dynamic trust between parties, not possible to scale without an internatioanlly decentralized digital governance, co-regulatory model (suitable to scale consent online)." 
 
-OpenID Reference for extension: *Authorization Server Obtains End-User Consent/Authorization*
+*Extendsion References* OpenID Reference for extension: *Authorization Server Obtains End-User Consent/Authorization*
 Once the End-User is authenticated, the Authorization Server MUST obtain an authorization decision before releasing information to the Relying Party. When permitted by the request parameters used, this MAY be done through an interactive dialogue with the End-User that makes it clear what is being consented to or by establishing consent via conditions for processing the request or other means (for example, via previous administrative consent). Sections 2 and 5.3 describe information release mechanisms.
 https://openid.net/specs/openid-connect-core-1_0.html#Consent
 
