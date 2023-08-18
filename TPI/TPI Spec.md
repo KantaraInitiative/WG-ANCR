@@ -1,4 +1,4 @@
-**Transparency Trust Metrics - Transparency Performance Indicators (TPIs)**
+**ANCR-WG - Reference Draft v0.5 (TPIs)**
 
 Editors: Sharon Polsky, Mark Lizar
 
@@ -16,7 +16,7 @@ Patent & Copyright: Reciprocal Royalty Free with Opt-out to Reasonable and Nondi
 
 **Suggested Citation: (upon WG approval)**
 
-ANCR Specification v0.9
+ANCR Specification v0.5
 
 # NOTICE
 
