@@ -1,6 +1,6 @@
 **ANCR-WG - Reference Draft v0.5 (TPIs)**
 
-From Kantara Initiative Wiki -[Now Archived Here]([url](https://kantara.atlassian.net/wiki/spaces/WA/pages/82542593/Transparency+Performance+Indicator+s+TPI+s+v0.5))  which was staging area into github - 
+From Kantara Initiative Wiki -[Now Archived Here]([url](https://kantara.atlassian.net/wiki/spaces/WA/pages/82542593/Transparency+Performance+Indicator+s+TPI+s+v0.5))  which was staging area into github - https://kantara.atlassian.net/wiki/spaces/WA/pages/82542593/Transparency+Performance+Indicator+s+TPI+s+v0.5
 
 **IPR Option:**
 
