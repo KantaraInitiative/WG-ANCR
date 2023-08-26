@@ -1,10 +1,6 @@
 **ANCR-WG - Reference Draft v0.5 (TPIs)**
 
-Editors: Sharon Polsky, Mark Lizar
-
-Chair: Sal D'Agostino
-
-Contributors:
+From Kantara Initiative Wiki -[Now Archived Here]([url](https://kantara.atlassian.net/wiki/spaces/WA/pages/82542593/Transparency+Performance+Indicator+s+TPI+s+v0.5))  which was staging area into github - 
 
 **IPR Option:**
 
