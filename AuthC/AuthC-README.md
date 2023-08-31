@@ -41,7 +41,7 @@ OPEN ID using TS-116 Can Digital Credential (being piloted by the SCC this summe
 **References**
 [Transparency Peformance Indicators v0.6](TPI/ANCR-TPI-Conformity Specefication v0.6.docx)  - ANCR GIT 
 
-DIACC SiG, digital governance interoperabilty for wallets, produced - "[adequacy-of-identity-governance-transparency](adequacy-of-identity-governance-transparency)" AuthC: Transparency and Consent, notice, notification and disclosure requirements, reviewed against frameworks.   Proposed as notice elemenets that can be  notarized with a certified Digital Privacy/Surveillance Officer/Operator Credential, 
+DIACC SiG, digital governance interoperabilty for wallets, produced - [Adequacy]([url](https://diacc.ca/2022/03/31/adequacy-of-identity-governance-transparency/)) "[adequacy-of-identity-governance-transparency](adequacy-of-identity-governance-transparency)" AuthC: Transparency and Consent, notice, notification and disclosure requirements, reviewed against frameworks.   Proposed as notice elemenets that can be  notarized with a certified Digital Privacy/Surveillance Officer/Operator Credential, 
 
 "Editorial Note: Currently in digital identity management the  Authorization Server Obtains End-User Consent/Authorization
 Once the End-User is authenticated. As an alternative AuthC presents a notice signalling protocol  extension for the notice points references in the DIACC paper, according to context, and levels of Transparency Risk Assurance required to manage liability to mitigate risks, and enable a much more robust and dynamic trust between parties, not possible to scale without an internatioanlly decentralized digital governance, co-regulatory model (suitable to scale consent online)." 
