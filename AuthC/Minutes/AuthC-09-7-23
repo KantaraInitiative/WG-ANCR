@@ -1,1 +1,56 @@
 
+Mintues
+
+ROll Call
+
+Agenda
+* New Items 
+* Action Updates
+* AuthC Outline
+* AuthC Diagrams
+* AuthC Walk through
+* AOB
+
+* Action - @MV to work on model next @ML to provide some UX input - presentation of Transparnecy OIndex flow 
+sequine.
+
+*Item 1: AuthC Sequence Diagram v0.01**
+
+Presented by @Mark 
+* very decent
+
+@startuml
+
+title "Consent Receipt"
+
+actor "End User" as user
+actor Client as client
+actor "Relying Party" as rp
+actor "Authorization Server" as az
+actor "Token Endpoint" as t
+actor "Privacy Notice API" as pna
+actor "OpenID Provider (OP)" as op
+
+user -> rp: Interacts with service
+rp --> client: Send signed JWT Consent Notice (CN-JWT+s) with nonce, PKCE challenge, PKCE challenge_method 
+client -> az: Get JWKS, Call OpenID Discovery Document (/.well-known/openid-configuration)
+az --> client: Discovery document JSON response
+client -> client: Verify CN-JWT+s signature using JWKS
+client --> user: Requests authorization to mint new Notice Acknowledgement
+client -> client: Generate signed and encrypted JWT Consent Notice Acknowledgement Token (CNAT-JWT+s+e verified credential)
+client -> az: Send Pushed Authorization Request (/oAuth2/par) with code_verifier, CNAT-JWT+s+e and authz details in RAR structure withing Request Object
+az->user: Request authentication login
+user->az: User submits login credential
+az->user: Request authorization and request storage of the CN VC
+user->az: User confirms authorization
+az-->client: Send authorization code
+client->t: Exchange authorization code for ID Token + Refresh Token
+t-->client: Send ID Token + Refresh Token + Access Token
+client->pna: Request Consent Notice Receipt
+pna->pna: Generate signed and encrypted Consent Notice Receipt
+pna->client: Return CNR-JWT+s+e
+client->client: Verify signature and decrypt using OP JWKS
+client->op: Call UserInfo
+op-->client: Get UserInfo claims
+
+@enduml
