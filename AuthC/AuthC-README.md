@@ -1,5 +1,7 @@
+
 **AuthC Scope**
-*AuthC - Notice and Consent Receipt Exchange Protocol for authorisation from consent*
+*AuthC - Signaling Protocol 
+AuthC (standing for Authorisation from Consent)  is a Notice and Consent Receipt Exchange Signaling Protocol for authorisation from consent. 
 
 The objective of the AuthC proptocol is to maintain an active state of transparency between two parties with a concentric mirrored notice record proptocol, enabling the individual to manage their own digital consent.   
 
