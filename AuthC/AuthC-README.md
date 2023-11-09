@@ -1,6 +1,8 @@
 
-**ANCR-AuthC Charter** 
-* to outline and specify the authC protocol so that it can be used as an extension to enable digital identity governance imteroperability. with regulated transparency and consent frameworks and architectures. 
+** AuthC Charter** 
+* As stated in the [ANCR WG Charter ]([url](https://kantara.atlassian.net/wiki/spaces/WA/pages/2916522/Charter)) "Specify and Contribute:  AuthC Transparency Protocol for signalling authorisation with consent"
+
+* Objective: specify the authC protocol so that it can be used as an extension to enable digital identity governance imteroperability, with regulated transparency and consent frameworks and architectures. 
 
 **AuthC ANCR-SIG Scope of Works**
 * Detail and specify - AuthC - Signaling Protocol 
@@ -13,14 +15,12 @@ Deliver core / generic authc flow for authorisation from consent covering
 * project kit for extension
 * Use Case :  OAuth Extension for Parental Consent Token Use Case - coon
 
-**Obejetive** 
+**Outcomes Desired** 
 * Active state transparency, security and data control
 * enable dynamic data control 
-The objective of the AuthC proptocol is to maintain an active state of transparency between two parties with a concentric mirrored notice record proptocol, enabling the individual to manage their own digital consent.   
+The use of the AuthC proptocol to maintain a shared and active state of transparency between two parties (peer to peer) with a concentric mirrored notice record proptocol, enabling the individual to manage their own digital consent.   
 
-**description**
-The AuthC protocol aims to achieve a synchronic transparency signal through the method of differential transparency, which is the pratice of comparing reciepts, as a notification receipt is pulled from a PII Controller Notice Credential each session.  If there is no change to the active state then a green light signal is provided and the PII Principal user experience is seemless.   
-
+Working to demonstate  a synchronic transparency signal through the method of differential transparency, which is the pratice of comparing reciepts, as a notification receipt is pulled from a PII Controller Notice Credential each session.  If there is no change to the active state then a green light signal is provided and the PII Principal user experience is seemless.   
 
 **Challenges**
 There are a number of well known challenges to digital security and privacy issues with decentralized digital identity management that are sovled for through the notarization of claims, to enable decentralised digital identity governance, with digital consent
@@ -62,7 +62,7 @@ PTR to start the authorization flow, generating a notice receipt from PII Contro
             2. Secure by design 
             3. Consent by design
           
-OPEN ID using TS-116 Can Digital Credential (being piloted by the SCC this summer)  to publish/produce an example
+OPEN ID using TS-116 Can Digital Credential (being piloted by the SCC 2023/24)  to publish/produce an example
 
 **References**
 [Transparency Peformance Indicators v0.6](TPI/ANCR-TPI-Conformity Specefication v0.6.docx)  - ANCR GIT 
