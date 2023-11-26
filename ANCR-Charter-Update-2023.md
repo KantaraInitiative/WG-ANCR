@@ -10,12 +10,12 @@ To provide a protocol and framework based on transparency, notice and consent th
 
 Collaborate with other Kantara, and community and standards groups in the adoption of the protocol and the anchor receipt.
 
-Contribute this to iso works, contribute to conformance programs for notice and consent in Kantara Initiative Community.
+Contribute this to ISO works, contribute to conformance programs for notice and consent in Kantara Initiative community.
 
 **(3) SCOPE:**
 
-1. _Publish a a set of Transparency Performance Indicators (TPIs) that adhere and make use of both international legal and technical standards, an associated Code of Conduct and digital transparency, notice and consent framework for global adequacy._
-2. _Develop a plan for the next generation of the Consent Receipt (v2 as well as determine the best place and collaboration where this takes place._
+1. _Publish a set of Transparency Performance Indicators (TPIs) that adhere and make use of both international legal and technical standards. The TPIs are part of an associated Code of Conduct, and a digital transparency, notice and consent framework that can be adeequate globally._
+2. _Develop a workplan for the next generation of the Consent Receipt v2 (e.g., tokenization) including where this best takle place._
   1. _Update the initial consent receipt specification by specifying the explicit consent record fields for legal proof(s) of notice and proof of consent._
   2. _In the update take advantage of ISO 29184 and ISO 27560 and other relevant technical standards, laws and policy developments._
 
@@ -46,7 +46,7 @@ Contribute this to iso works, contribute to conformance programs for notice and 
 **(6) LEADERSHIP:** _Proposed WG Chair and Editor(s)_
 
 - Chairs & Secretary (initial)
-  - Chair - Sal D'Agostino
+  - Co-Chair - Sal D'Agostino, Sharon P
   - Editor - Mark Lizar
   - Secretary – Gigi Agassini
 
@@ -80,5 +80,5 @@ Notice and Consent Task force at ToiP, DIACC, Kantara ISO BOT Liaison, aNG liais
 | **Proposers Name** | **Email** | **Organization (or Individual)** | **Voting Member** | **Affiliations** |
 | --- | --- | --- | --- | --- |
 | Paul Knowles | paul.knowles [at] [humancolossus.org](http://humancolossus.org/) | Human Colossus | x | ToiP-Inputs and Semantics WG |
-| Sal D'Agostino | 1dmach1n35 [at] [gmail.com](http://gmail.com/) | Individual | x | Security Industry Association, ToIP, Kantara |
-| Mark Lizar | Mark [at] [openconsent.com](http://openconsent.com/) | OpenConsent | x | Trust Over IP Notice and Consent Task Force |
+| Sal D'Agostino | sal [at] [idmachines.com](http://idmachines.com/) | IDmachines | x | Security Industry Association, ToIP, IEEE, Kantara |
+| Mark Lizar | Mark [at] [transparencylab.ca](http://openconsent.com/) | Digital Transparency Lab | x | Trust Over IP Notice and Consent Task Force |
