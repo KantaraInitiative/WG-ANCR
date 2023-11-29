@@ -46,7 +46,7 @@ Contribute this to ISO works, contribute to conformance programs for notice and 
 **(6) LEADERSHIP:** _Proposed WG Chair and Editor(s)_
 
 - Chairs & Secretary (initial)
-  - Co-Chair - Sal D'Agostino, Sharon P
+  - Co-Chair - Sal D'Agostino
   - Editor - Mark Lizar
   - Secretary – Gigi Agassini
 
