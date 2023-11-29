@@ -62,13 +62,13 @@ Operators of identity, privacy, security, and consent systems in the real world.
 
 **(8) DURATION:** _Objective criteria for determining when the work of the WG has been completed (or a statement that the WG is intended to be a standing WG to address work that is expected to be ongoing)._
 
-The charter is for the next year, to cover the publication of the TPI specification and also to cover the path of the work going forward..
+The charter is for the next year, to cover the publication of the TPI specification and proceed with items in roadmap, next step being the assessments using the TPI's with regards to consent by default, and the associated controller credential (see roadmap)
 
 **(9) IPR POLICY:** The Organization approved Intellectual Property Rights Policy under which the WG will operate.
 
 [Kantara Initiative IPR Policy](https://kantarainitiative.org/wp-content/uploads/2014/08/KantaraInitiativeIPRPolicies_V2.0.pdf) - Patent and Copyright, Reciprocal Royalty Free, opt out to RAND,
 [https://kantarainitiative.org/confluence/pages/viewpage.action?pageId=41025689](https://kantarainitiative.org/confluence/pages/viewpage.action?pageId=41025689)
-
+-------------
 **(10) RELATED WORK AND LIAISONS:** _Related work being done in other WGs or other organizations and any proposed liaison with those other WGs or organizations._
 
 Notice and Consent Task force at ToiP, DIACC, Kantara ISO BOT Liaison, aNG liaison, and W3C DPV among others. Numerous other previous activities and liaisons developed in the Kantara CIS WG. (now archived).
