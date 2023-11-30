@@ -6,15 +6,17 @@ _Anchored Notice and Consent Receipt Work Group_
 
 **(2) PURPOSE:**
 
-To provide a protocol and framework based on transparency, notice and consent that supports the use of records and receipts for decentralized authorization independent of identifier technology. To provide a set of Transparency Performance Indicators (TPIs) and an associated conformance program to establish a baseline and measurement mechanism for digital transparency, notice and consent. To further develop the initial consent receipt work with a specification for an anchor receipt for notice of purpose and context and proof of notice that supports decentralized governance and authorization (Auth C) by the principal and the controller/operator.
-
-Collaborate with other Kantara, and community and standards groups in the adoption of the protocol and the anchor receipt.
-
-Contribute the specification and work toward the governance of a Digital Commons, and also to ISO works, to further develop and support its use as a conformance program for notice and consent at the Kantara Initiative and its community.
+1. To provide a protocol and framework that is based on transparency, notice and consent that supports the use of records and receipts (Consent Receipts) for decentralized authorization independent of identifier technology.
+2. To provide a set of Transparency Performance Indicators (TPIs) and an associated conformance program to establish a baseline and measurement mechanism for digital transparency, notice and consent.
+3. To further develop the initial consent receipt work with a specification for an anchor receipt for notice of purpose and context and proof of notice that supports decentralized governance and authorization (Auth C) by the PII principal and the data controller and data processor. Collaborate with other Kantara, and community and standards groups in the adoption of the protocol and the anchor receipt.
+4. Contribute the specification so it can be used in an open governance framwork
+     1. Contribute the specification and the work in the furtherance of the governance of a Digital Commons
+     2. Contribute the specification and the work to the International Organization for Standardization (ISO) for its use in         related specifications.
+     3. Contribute the specification and the work to the Kantara Initiative for use in identity, privacy and security governance frameworks and conformance programs.
 
 **(3) SCOPE:**
 
-1. _Publish a set of Transparency Performance Indicators (TPIs) that adhere and make use of both international legal and technical standards. The TPIs are part of an associated Code of Conduct, and a digital transparency, notice and consent framework that can be adeequate globally._
+1. _Publish as a Kantara Recommendation a set of Transparency Performance Indicators (TPIs) that adhere and make use of both international legal and technical standards. To complement the TPIs publish an associated Code of Conduct, as part of a Digital Transparency, Notice and Consent Framework that can be adeequate globally._
 2. _Develop a workplan for the next generation of the Consent Receipt v2 (e.g., tokenization) including where this best takle place._
   1. _Update the initial consent receipt specification by specifying the explicit consent record fields for legal proof(s) of notice and proof of consent._
   2. _In the Consent Receipt v2 update and take advantage of ISO 29184 and ISO 27560 and other relevant technical standards, laws and policy developments._
