@@ -4,7 +4,7 @@ This repository contains the working materials, drafts, and versioned packages p
 
 ANCR WG focuses on interoperable, implementation-ready artefacts that support **inspectable, accountable notice and consent receipt exchange**.
 
-## The Consent Receipt (core project)
+## The Consent Receipt
 
 The **Consent Receipt** is Kantara ANCR WG's foundational transparency artefact for co-regulated digital identification: a machine-readable record handed to a person at the point of notice, capturing who is
 processing their data, for what purpose, under what legal basis, and how to exercise
