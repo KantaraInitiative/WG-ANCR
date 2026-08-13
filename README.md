@@ -28,10 +28,9 @@ their rights. It turns human consent from an unverifiable claim into inspectable
 (current working entry point:
 [`iso-27560-ts-extension/`](27560-ancr-profile-extension/iso-27560-ts-extension/index.md)).
 
-## Submission index (PWI 26689)
+## Submission index 
 
-Working-group outputs corresponding to the documents submitted for ISO/IEC JTC 1/SC 27/WG 5
-(PWI 26689 — Notice and Consent Records):
+Working-group outputs corresponding to contributions submitted for ISO/IEC JTC 1/SC 27/WG 5:
 
 - **27560 Notice Receipt Extension** — the receipt-exchange profile extending ISO/IEC TS 27560:2023.
 - **PWI 26689 Gap Analysis, Part 1 (Scope A)** — TS 27560:2023 cross-referenced against receipt-exchange requirements.
@@ -48,6 +47,8 @@ Working-group outputs corresponding to the documents submitted for ISO/IEC JTC 1
 
 - Join the ANCR Working Group (membership / participation):  
   https://kantara.atlassian.net/wiki/spaces/WA/overview?homepageId=2916356
+  ** Calls twice a month starting Aug 20, 2026 **
+  
 
 ## What’s in this repo
 
