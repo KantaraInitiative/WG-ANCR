@@ -1,6 +1,6 @@
 # CHANGELOG: ANCR ISO/IEC TS 27560:2023 Notice record extension
 
-This changelog records revisions to `27560 TS Notice Receipt Extension.md`. Until a canonical version is assigned by the ANCR Working Group, cite this document by its Git commit hash, not by a bare version string. Version numbers are not interchangeable across artefacts.
+This changelog records revisions to `ancr-ts-27560 Notice Record Extension.md`. Until a canonical version is assigned by the ANCR Working Group, cite this document by its Git commit hash, not by a bare version string. Version numbers are not interchangeable across artefacts.
 
 ## [Unreleased]
 
