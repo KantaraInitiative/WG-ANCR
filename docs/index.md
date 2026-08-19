@@ -45,7 +45,6 @@ evidence.
   [27560 ANCR Profile Extension](https://github.com/KantaraInitiative/ancr-wg/tree/main/ancr-ts-27560-extension)
 - Current working entry point:
   [ISO-27560 TS Extension](https://github.com/KantaraInitiative/ancr-wg/blob/main/ancr-ts-27560-extension/ancr-ts-27560%20Notice%20Record%20Extension.md)
-- Archived baselines: v1.01 and v1.02 under the same package.
 
 ## Submission index (PWI 26689)
 
@@ -55,8 +54,6 @@ ISO/IEC JTC 1/SC 27/WG 5 (PWI 26689, Notice and Consent Records):
 - **27560 Notice Receipt Extension**, the receipt-exchange profile extending
   ISO/IEC TS 27560:2023 (the N-doc that carries the Consent Receipt into the
   standard).
-- **PWI 26689 Gap Analysis, Part 1 (Scope A)**, the cross-reference of ISO/IEC
-  TS 27560:2023 against the receipt-exchange requirements.
 - **WG5 / CoE Liaison materials**, the plenary and Council of Europe liaison
   decks.
   [WG5 Report 03-2026 materials](https://github.com/KantaraInitiative/ancr-wg/tree/main/ancr-ts-27560-extension/materials)
