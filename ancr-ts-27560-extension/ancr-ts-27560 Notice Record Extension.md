@@ -1,4 +1,4 @@
-# ANCR ISO/IEC TS 27560:2023 Notice record extension
+# ANCR TS 27560:2023 Notice record extension
 
 Anchored Notice and Consent Receipts for Operational Transparency, a consent receipt extension for TS 27560:2023 
 
