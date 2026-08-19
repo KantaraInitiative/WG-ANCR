@@ -1,6 +1,6 @@
 # CHANGELOG: ANCR ISO/IEC TS 27560:2023 Notice record extension
 
-This changelog records revisions to `27560 TS Notice Receipt Extension.md`. Until a canonical version is assigned by the ANCR Working Group, cite this document by its Git commit hash, not by a bare version string. Version numbers appearing across the file tree (v0.3), the archive (v1.02), the N-docs (v1.05, v1.06), and the Blueprint (v1.07.1) refer to different artefacts and are not interchangeable.
+This changelog records revisions to `27560 TS Notice Receipt Extension.md`. Until a canonical version is assigned by the ANCR Working Group, cite this document by its Git commit hash, not by a bare version string. Version numbers are not interchangeable across artefacts.
 
 ## [Unreleased]
 
@@ -24,5 +24,26 @@ This changelog records revisions to `27560 TS Notice Receipt Extension.md`. Unti
 - Removed a stray open parenthesis from the Annex A.2 heading.
 
 ### Added
-- Revision line: instruction to cite by commit hash until a canonical version is fixed, with an explicit note on the version collision across artefacts.
-- Informative editorial note recording the three deliberate positions on "minimum notice disclosure" (live at 3.12 and C2 in this extension, retired in the PWI 26689 brief, reinstated by Blueprint v1.07.1 item 9).
+- Revision line: instruction to cite by commit hash until a canonical version is fixed.
+
+### Added (seeding-document update, per the external-facing brief)
+- Clause 1: adopted the extension-voice scope statement (notice evidence artefacts for inspectable, verifiable digital transparency; does not replace 29184 or TS 27560; does not redefine consent).
+- Clause 1.1 (informative): what this document enables others to standardize, worded as enablement only, no downstream document named, no commitment or dependency.
+- Introduction: authority sequence stated once, in order (Convention 108+, 29100, 29184, TS 27560, minimum notice disclosure and anonymity by default, Transparency by Default).
+- Clause 3: added defined terms 3.15 notice, 3.16 online notice, 3.17 digital transparency, 3.18 consent, 3.19 online consent, 3.20 permission, 3.21 consent record, 3.22 two-factor online notice (2FN), each with notes to entry and no SHALL. Removed the SHALL from 3.12; the normative requirement stays in 5.1 C2.
+- Clause 4: symbols clause resolves CIR, ANCR, CDRI, MVCR, 2FN; 1FN not listed.
+- Clause 7.4.4: processing events specified distinctly from notice lifecycle events, with a minimum processing event record.
+- Clause 7.5: purpose specified as a recorded artefact, bound to legal authority, controller, and notice version. Unrecorded purpose is stated as a security defect in a note, with the conformance consequence in Clause 8.
+- Clause 7.6: relationship to consent records specified as a reference to the prior notice disclosure event only.
+- Clause 8: added mandatory requirements 7 (purpose) and 8 (processing events).
+- Clause 7.3.2: added a purpose field to the Notice Receipt field specification table, bound to notice_version_reference and the controller, per 7.5.
+- Clause 7.1.1A: corrected the duplicate 7.1.1 subclause number to 7.1.1A (the CIR field specification table).
+
+### Terminology
+- "terminology bridge" changed to "interoperability"; "lifecycle spine" and "evidence spine" changed to Notice Event Log and evidence model. The 2FN meaning is kept as two-factor online notice; 1FN is not introduced (see the 1FN/2FN collision decision in the brief).
+
+### Added (separate proposal): TPI-R conformance appendix
+- Annex E (informative): TPI-R conformance and compliance profile. Maps the extension's artefacts to the four TPI indicators (Timing, Required elements, Accessibility, Security integrity) and to the ANCR conformance indicators (CIR, Notice Receipt, Anchored Notice Receipt, Notice Event Log). E.3 states that a TPI-R score is a signal, not a conformance claim (conformance is defined by Clause 8 and 5.1). The choice between Kantara TPI-R and ANCR TPI-R is left as a working group decision recorded in E.1. Informative only; adds no normative requirement and no downstream dependency.
+
+### Open for the editor
+- The field name `controller_identity_record_id` retains "identity" while the referenced artefact is the Controller Identification Record. Decision: keep the field name for this version, with an explaining note in 7.1; align it to "identification" in a future version.
