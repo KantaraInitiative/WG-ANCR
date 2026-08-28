@@ -25,9 +25,11 @@ The following artefact is present in this folder as a draft:
 
 - `conv108-dpv-extension-spec.md` — the Convention 108+ extension draft
   specification (namespace, legal bases, rights, principles, transparency
-  requirements), plus the class-bound assurance layer (TPI v1 controller, v2
-  instrument, v3 AI system). Status: **0.1 draft**, unpublished, not yet reviewed
-  by Mark Lizar / ANCR-WG.
+  requirements) framed for **dynamic data control transparency**, plus the
+  class-bound assurance layer (TPI v1 Controller Control, v2 Regulatory Control,
+  v3 Data Control) and **Annex A** aligning FDIS ISO/IEC 27091 Operational
+  Transparency to ISO/IEC 27560 and PWI 26689. Status: **0.1 draft**, unpublished,
+  submitted for ANCR-WG review.
 
 ## Planned files (not yet published in this folder)
 The following artefacts are in preparation and are not yet committed to this
