@@ -3,7 +3,7 @@
 **Status:** DRAFT
 **Editor:** ANCR Working Group (Kantara Initiative)
 **Version:** 0.1-draft
-**Date:** 2026-08-18
+**Date:** 2026-08-28
 
 > **Scope discipline (binding, from `dpv/README.md`).** This document does **not** propose new interpretations of Convention 108+. It provides (1) a traceable Convention 108+ modelling structure expressed in a DPV-style pattern, and (2) evidence-first acceptance criteria for guidance that claims to represent valid consent evidence in digital / open-network contexts. It is **not** an official W3C DPVCG deliverable, **not** a replacement for DPV specifications or DPV:27560 documentation, and **not** an ISO-adopted profile. All references to ISO/IEC TS 27560 and related standards are **alignment references** and an implementation-pattern concept, not claims of adoption.
 
@@ -11,11 +11,11 @@
 
 ## 1. Purpose and framing
 
-This extension expresses the **Convention 108+ legal model** as a DPV-style vocabulary so that a notice / consent record can carry, in machine-readable form, the authority under which personal data is processed. It then adds an **AI profile** that carries the AI-required information set (elements I1-I16 from the companion AI-required information analysis) as DPV-style fields and classes.
+This extension expresses the **Convention 108+ legal model** as a DPV-style vocabulary to enable **dynamic data control transparency**, so that a notice / consent record can carry, in machine-readable form, the authority under which personal data is processed. It carries that authority in the form of a **dynamic data control system** that holds the AI-required information set (elements I1-I16 from the companion AI-required information analysis) as DPV-style fields and classes.
 
-The framing is **Operational Transparency**: notice and permission expressed as records produced by the operation itself, so that legal authority, technical operation, and individual awareness hold in the same moment (the *synchronic* property). Three artefacts carry it: a machine-readable notice / consent receipt, a publicly resolvable **Controller Identification Record (CIR)**, and an Internet Transparency Code of Practice grounded in Convention 108+. This spec is the legal-model layer those artefacts resolve to.
+The framing provides for **Operational Transparency**: notice and permission expressed as records produced by the operation itself, so that legal authority, technical operation, and individual awareness hold in the same moment (the *synchronic* property). Three artefacts carry the transparency signal: a machine-readable notice / consent receipt, a publicly resolvable **Controller Identification Record (CIR)**, and an over-arching **Transparency Code of Practice** grounded in Convention 108+. This spec is the DPV — a legal-style semantic vocabulary — that those artefacts resolve to.
 
-The load-bearing distinction this vocabulary must keep testable (from the Operational Transparency framing, companion material):
+The key distinction this vocabulary must keep testable, for the Operational Transparency required by dynamic data control systems (e.g. cookies, analytics, and other artificially intelligent data systems):
 
 - **Consent** is authority held by the individual and expressed as a legal basis.
 - **Technical permission** is system enforcement.
@@ -246,27 +246,27 @@ From the README's five gap areas. Each is a **testable** condition on a record o
 
 ---
 
-## 9. Assurance layer: class-bound assessment (TPI v1 controller, TPI v2 instrument, TPI v3 AI system) over the record
+## 9. Assurance layer: class-bound assessment (TPI v1 Controller Control, TPI v2 Regulatory Control, TPI v3 Data Control) over the record
 
-This spec defines the **record and vocabulary**: the DPV-style structure an instrument, a controller, or an AI system uses to carry the AI-required information set (I1-I16) with each element anchored to a Convention 108+ article. It does **not** define how well a given object performs against that structure. That is the job of a distinct **assessment method** applied over the record. The record (I1-I16) is **version-agnostic**: it does not change with the assessment. What changes is **which assessment class** is applied, and that is fixed by **what object is being assessed**:
+This spec defines the **notice-record vocabulary**: the DPV-style semantic structure, defined by an international regulatory instrument, that an instrument, a controller, or a dynamic data control system uses to carry the AI-required information set (I1-I16) with each element anchored to a Convention 108+ article. **TPI v1 (Controller Control)** focuses on controller accountability, fairness, and respect for consent. **TPI v2 (Regulatory Control)** is enabled by applying this vocabulary as the baseline adopted and enforced by the countries that have signed the Convention 108+ treaty; it is used to evaluate data-governance policy and legislation, making it possible to assess the governance of data once it is provided. **TPI v3 (Data Control)** then assesses the dynamic data control system itself. The spec does **not** define how well a given object performs against that structure — that is the job of a distinct **assessment method** applied over the record. The record (I1-I16) is **version-agnostic**: it does not change with the assessment. What changes is **which assessment class** is applied, and that is fixed by **what object is being assessed**:
 
-- a **controller** (a live entity that processes personal data) is assessed by **TPI v1**;
-- a **governance instrument** (a standard / regulation / mechanism, including this extension as an instrument) is assessed by **TPI v2**;
-- an **AI system** (a lifecycle of designer, developer, trainer, deployer) is assessed by **TPI v3**.
+- a **controller** (a live entity that processes personal data) is assessed by **TPI v1 (Controller Control)**;
+- a **governance instrument** (a standard / regulation / mechanism, including this extension as an instrument) is assessed by **TPI v2 (Regulatory Control)**;
+- a **dynamic data control system** (a lifecycle of designer, developer, trainer, deployer, aligned to regulatory control) is assessed by **TPI v3 (Data Control)**, which incorporates all three assessment reports (controller, instrument, and lifecycle).
 
-TPI v2 assesses this extension **as a governance instrument**: how much regulatory / transparency capacity the instrument (or a controller relying on it) delivers against I1-I16, baselined to Convention 108+ Art 8.2. TPI v3 assesses **an AI system's conformance to the I1-I16 record across its lifecycle**: whether each stage (designer, developer, trainer, deployer) actually produced, bound, and tested the record the extension requires. The two are additive, not alternatives: an AI system is built on instruments assessed by v2, and both resolve to controllers assessed by v1.
+TPI v2 assesses this extension **as a governance instrument**: how much regulatory / transparency capacity the instrument (or a controller relying on it) delivers against I1-I16, baselined to Convention 108+ Art 8.2. TPI v3 assesses **a dynamic data control system's conformance to the I1-I16 record across its lifecycle** — and can be used, for example, to govern a generative AI system: whether each stage (designer, developer, trainer, deployer) actually produced, bound, and tested the record the extension requires. The two are additive, not alternatives: a dynamic data control system is built on instruments assessed by v2, and both resolve to controllers assessed by v1.
 
 **The division of labour (keep testable).**
 
 - **This extension = the record / vocabulary.** What must be carried (I1-I16), how it is expressed (`conv108:` classes, DPV reuse), and the evidence-first acceptance criteria a record either passes or fails (section 8). This layer is version-agnostic and is defined in sections 3 through 8; it does not gain a v3 dimension.
 - **TPI v2 = the assessment method over the instrument.** A governance-instrument-level audit that scores how much regulatory / transparency capacity an instrument (assessed by v2) delivers against the I-elements. A controller relying on that instrument is itself assessed by **v1**, never by v2: the controller and the instrument are different objects, so a controller is assessed by v1 and the instrument it relies on is assessed by v2.
-- **TPI v3 = the assessment method over the AI system.** An AI-system-level audit that scores whether an AI system's lifecycle (designer, developer, trainer, deployer) conforms to the I1-I16 record end to end, testing what v1 (controller-level) and v2 (instrument-level) structurally cannot see: the chain running across lifecycle stages.
+- **TPI v3 = the assessment method over the dynamic data control system.** A system-level audit that scores whether a dynamic data control system's lifecycle (designer, developer, trainer, deployer) conforms to the I1-I16 record end to end, testing what v1 (controller-level) and v2 (instrument-level) structurally cannot see: the chain running across lifecycle stages.
 
-The three are **joined at the CIR / assessment record**: the CIR (section 5) resolves the accountable party and the authority conditions; each assessment record is authored *over* the same I-elements the CIR and receipts carry, so a score is always traceable back to the specific I-elements and Convention 108+ articles it assessed. The vocabulary makes the facts machine-readable; the class-bound assessment makes the capacity behind those facts assessable.
+The three are **joined at the CIR / assessment record**: the CIR (section 5) resolves the accountable party and the legitimacy of authority (its transparent condition); each assessment record is authored *over* the same I-elements the CIR and receipts carry, so a score is always traceable back to the specific I-elements and Convention 108+ articles it assessed. The vocabulary makes the facts machine-readable; the class-bound assessment makes the capacity behind those facts assessable.
 
 ### 9.1 TPI v2 method (alignment reference, in development)
 
-TPI v2 is a **0PN / ANCR in-development method** (`method_version: v2.0`, baseline **Convention 108+ Art 8.2**; source: 0PN Bill C-27 Report and Rating, Lizar and Agassini 2024). It is an **alignment reference, not adopted ISO text**, and it is **plan-validated, not yet built** into the reference implementation. It is cited here so the assurance layer over this record is on record, not to claim a finished instrument.
+TPI v2 is an Operational Transparency, **Open ANCR in-development method** (an open ISO/IEC TS 27560 + ANCR method; `method_version: v2.0`, baseline **Convention 108+ Art 8.2**; source: 0PN Bill C-27 Report and Rating, Lizar and Agassini 2024). It is an **alignment reference, not adopted ISO text**, and it is **plan-validated, not yet built** into the reference implementation. It is cited here so the assurance layer over this record is on record, not to claim a finished instrument.
 
 TPI v2 is **analytical expert judgment, not an automated score.** The method supplies the structure, the baseline, and the indicator library; a human assessor authors the audit. A crawler does not produce a v2 score.
 
@@ -275,11 +275,11 @@ Two layers:
 - **Layer A: TPI headline scorecard (4 indicators, each +1 / 0 / -1).** TPI-1 Controller Identification Timing; TPI-2 Controller Identification Completeness; TPI-3 Rights Access Mechanisms; TPI-4 Cross-Border Transfer Transparency. These map directly onto I-elements this spec carries: TPI-1 over I1 (`conv108:TransparencyBeforeCollection`); TPI-2 over I11, I14 (`conv108:DualHeldRecordRequirement`, `conv108:hasRegistryIdentifier`); TPI-3 over I10 (`conv108:hasRightsAccessReference`); TPI-4 over I8, I14 (`conv108:hasTransborderSafeguard`, jurisdiction-scoped identifier).
 - **Layer C: Digital Privacy Governance Trust (10 questions, aggregated as a percentage).** Applies where a governance dimension is present (a law or regulation gets Layer A + Layer C; a standard or mechanism such as this extension gets Layer A primarily, Layer C where a governance dimension applies).
 
-### 9.1a TPI v3: AI-system class (0PN / ANCR in-development, PROPOSED)
+### 9.1a TPI v3: dynamic data-control-system class (Open ANCR in-development, PROPOSED)
 
-**Status flags (read first).** TPI v3 is a **0PN / ANCR in-development** assessment class. It is **PROPOSED**, **undefined elsewhere** (no analogue in the AI Act conformity framework, in DPV, or in adopted ISO text), and **expert-authored, not auto-scored** (like v2, and unlike the v1 automated probe, a v3 score is analytical expert judgment authored over the record, not produced by a crawler). It is on record here so the AI-system assurance class is captured; it is not a finished instrument. Resolved: the Class-3 AI-system assessment is TPI v3, additive to v1 controllers and v2 instruments.
+**Status flags (read first).** TPI v3 is an **Open ANCR in-development** assessment class. It is **PROPOSED**, **undefined elsewhere** (no analogue in the AI Act conformity framework, in DPV, or in adopted ISO text), and **expert-authored, not auto-scored** (like v2, and unlike the v1 automated probe, a v3 score is analytical expert judgment authored over the record, not produced by a crawler). It is on record here so the AI-system assurance class is captured; it is not a finished instrument. Resolved: the Class-3 AI-system assessment is TPI v3, additive to v1 controllers and v2 instruments.
 
-**What v3 assesses.** TPI v1 assesses a controller at a single point (its CIR / live posture). TPI v2 assesses a governance instrument at a single point (its capacity against I1-I16). Neither can see the property that only exists **across an AI system's lifecycle**: whether the I1-I16 record was produced, bound, and tested at each stage as the system moved designer to developer to trainer to deployer. TPI v3 is the assessment class scoped to that object, the AI system as a lifecycle, and its distinguishing indicators are exactly the I-elements v1 and v2 structurally cannot cover:
+**What v3 assesses.** TPI v1 assesses a controller at a single point (its CIR / live posture). TPI v2 assesses a governance instrument at a single point (its capacity against I1-I16). Neither can see the property that only exists **across a dynamic data control system's lifecycle** (a generative AI system being the primary example): whether the I1-I16 record was produced, bound, and tested at each stage as the system moved designer to developer to trainer to deployer. TPI v3 is the assessment class scoped to that object, the dynamic data control system as a lifecycle, and its distinguishing indicators are exactly the I-elements v1 and v2 structurally cannot cover:
 
 | v3 indicator | I-element(s) | What only v3 can test | Anchor |
 |---|---|---|---|
@@ -289,21 +289,21 @@ Two layers:
 | Chain-scoped cross-border per lifecycle stage | I8 | The transborder safeguard is resolved **per lifecycle stage** (each stage may sit in a different jurisdiction), not once for the whole system. | Conv 108+ Art 14 |
 | Dual-held custody across the chain | I11 | The record is held by at least two parties **at each hand-off** through the chain, so custody survives every lifecycle transition, not only at the endpoint. | TS 27560 + ANCR |
 
-These five are the v3-distinguishing set: each is a property of the **chain across stages**, which is invisible to a controller-point assessment (v1) or an instrument-point assessment (v2). v3 does not replace v1 or v2; an AI system is composed of controllers (each v1-assessable) relying on instruments (each v2-assessable), and v3 is the additional class that scores the lifecycle chain those parts form.
+These five are the v3-distinguishing set: each is a property of the **chain across stages**, which is invisible to a controller-point assessment (v1) or an instrument-point assessment (v2). v3 does not replace v1 or v2; a dynamic data control system is composed of controllers (each v1-assessable) relying on instruments (each v2-assessable), and v3 is the additional class that scores the lifecycle chain those parts form.
 
 ### 9.2 TPI v1 vs TPI v2 vs TPI v3 (distinction on record)
 
 To keep the assurance vocabulary unambiguous:
 
-| | TPI v1 | TPI v2 | TPI v3 |
+| | TPI v1 (Controller Control) | TPI v2 (Regulatory Control) | TPI v3 (Data Control) |
 |---|---|---|---|
-| Assesses | a **controller** (a live entity that processes personal data, keyed by domain) | a **governance instrument** (a standard / regulation / mechanism that governs controllers, keyed by instrument id) | an **AI system** (a designer to developer to trainer to deployer lifecycle, keyed by system id) |
+| Assesses | a **controller** (a live entity that processes personal data, keyed by domain) | a **governance instrument** (a standard / regulation / mechanism that governs controllers, keyed by instrument id) | a **dynamic data control system** (a designer to developer to trainer to deployer lifecycle, keyed by system id) |
 | Method | automated 6-indicator live probe (plus v1.5 human enrichment, v1.6 legal-adequacy against the 23 ANCR requirements) | analytical expert judgment: Layer A (4 indicators) + Layer C (governance-trust %) | analytical expert judgment over the lifecycle chain (chain-of-notice, provenance + Art 5.4, live model-state, chain-scoped cross-border, dual-held custody) |
-| Level | controller / CIR layer | governance-instrument layer | AI-system / lifecycle layer |
-| Over this record | scores a controller's transparency posture | scores the instrument (or its reliance chain) against I1-I16 | scores an AI system's conformance to the I1-I16 record across its lifecycle (I16, I5/I3, I15, I8, I11 as chain properties) |
-| Status | in use | 0PN / ANCR in-development (alignment reference) | 0PN / ANCR in-development, PROPOSED, undefined elsewhere, expert-authored |
+| Level | controller / CIR layer | governance-instrument layer | dynamic-data-control-system / lifecycle layer |
+| Over this record | scores a controller's transparency posture | scores the instrument (or its reliance chain) against I1-I16 | scores a dynamic data control system's conformance to the I1-I16 record across its lifecycle (I16, I5/I3, I15, I8, I11 as chain properties) |
+| Status | in use | Open ANCR in-development (alignment reference) | Open ANCR in-development, PROPOSED, undefined elsewhere, expert-authored |
 
-The three assessments are **class-bound to what is being assessed**: a controller by v1, this extension as a governance instrument by v2, an AI system by v3. The record (I1-I16) is version-agnostic across all three; only the assessment class changes with the object.
+The three assessments are **class-bound to what is being assessed**: a controller by v1, this extension as a governance instrument by v2, a dynamic data control system by v3. The record (I1-I16) is version-agnostic across all three; only the assessment class changes with the object.
 
 ### 9.3 Class taxonomy: object to version binding
 
@@ -311,11 +311,11 @@ The assessment class is fixed by the **object** under assessment. The record (I1
 
 | Class | Object assessed | Assessment version | Keyed by | What it can see that lower classes cannot |
 |---|---|---|---|---|
-| Class 1 | Controller (live entity processing personal data) | **TPI v1.x** | domain | the controller's live transparency posture at its CIR |
-| Class 2 | Governance instrument (standard / regulation / mechanism, incl. this extension) | **TPI v2** | instrument id | the regulatory / transparency capacity an instrument delivers against I1-I16 |
-| Class 3 | AI system (designer to developer to trainer to deployer lifecycle) | **TPI v3** | system id | the chain properties (I16, I5/I3, I15, I8, I11) that exist only across lifecycle stages |
+| Class 1 | Controller (live entity processing personal data) | **TPI v1.x (Controller Control)** | domain | the controller's live transparency posture at its CIR |
+| Class 2 | Governance instrument (standard / regulation / mechanism, incl. this extension) | **TPI v2 (Regulatory Control)** | instrument id | the regulatory / transparency capacity an instrument delivers against I1-I16 |
+| Class 3 | Dynamic data control system (designer to developer to trainer to deployer lifecycle) | **TPI v3 (Data Control)** | system id | the chain properties (I16, I5/I3, I15, I8, I11) that exist only across lifecycle stages |
 
-**Version-agnostic record, class-bound assessment.** The I1-I16 record (sections 3 through 7) does not change with the class: the same vocabulary and the same evidence-first acceptance criteria (section 8) apply whether the object being assessed is a controller, an instrument, or an AI system. Only the **assessment** is class-bound. A record is never "a v1 record" or "a v3 record"; it is one version-agnostic record, assessed by whichever class matches the object.
+**Version-agnostic record, class-bound assessment.** The I1-I16 record (sections 3 through 7) does not change with the class: the same vocabulary and the same evidence-first acceptance criteria (section 8) apply whether the object being assessed is a controller, an instrument, or a dynamic data control system. Only the **assessment** is class-bound. A record is never "a v1 record" or "a v3 record"; it is one version-agnostic record, assessed by whichever class matches the object (controller, instrument, or dynamic data control system).
 
 ---
 
@@ -326,7 +326,7 @@ Marking design-layer additions vs adopted standard text, so maturity is not over
 - **This is a DRAFT.** It has not been circulated, balloted, or accepted.
 - **Not adopted standard text.** All `conv108:` terms in sections 3, 4, 5, 6, and 7 are **proposed design-layer additions** authored for this extension. They are not Convention 108+ text, not DPV/DPVCG-published terms, and not ISO-adopted. Convention 108+ article numbers are cited as **anchors** (what the modelling handle points at), not as endorsements of the term by the treaty.
 - **Alignment references only.** ISO/IEC TS 27560, ISO/IEC 29184, ISO/IEC 29100, ISO/IEC 27091, ISO/IEC 22989, and the ANCR extension are named as **alignment references** and an implementation-pattern concept. Nothing here is an ISO-adopted profile. The `ancr:` prefix denotes the ANCR extension as an alignment target, not a resolved published namespace. The ISO/IEC 22989 AI-lifecycle role labels used in the I16 chain-of-notice binding (section 7.1) are cited as alignment references to name a participant's lifecycle role; they are carried as the value of `conv108:hasLifecycleRole` and are not adopted `conv108:` terms.
-- **TPI assurance layer (section 9) is class-bound and, for v2 and v3, a 0PN / ANCR in-development method, not adopted standard text.** The assessment class is fixed by the object: **v1** over a controller, **v2** over a governance instrument (this extension), **v3** over an AI system. The TPI v2 Regulatory Capacity Audit and the TPI v3 AI-system assessment are cited as **alignment references** for the assurance layer over this record; both are plan-validated, not yet built into the reference implementation, and are analytical expert judgment rather than automated scores. **TPI v3 (section 9.1a) is PROPOSED, undefined elsewhere, and the least mature of the three:** it is on record so the AI-system assurance class is captured, not because it is a finished instrument. Convention 108+ Art 8.2 is cited as v2's **baseline anchor**, not as an endorsement of the method by the treaty. This spec defines the record and vocabulary (version-agnostic); the TPI classes define the assessment methods over it, and the record and the assessments remain separable.
+- **TPI assurance layer (section 9) is class-bound and, for v2 and v3, an Open ANCR in-development method, not adopted standard text.** The assessment class is fixed by the object: **v1 (Controller Control)** over a controller, **v2 (Regulatory Control)** over a governance instrument (this extension), **v3 (Data Control)** over a dynamic data control system. The TPI v2 Regulatory Capacity Audit and the TPI v3 dynamic-data-control-system assessment are cited as **alignment references** for the assurance layer over this record; both are plan-validated, not yet built into the reference implementation, and are analytical expert judgment rather than automated scores. **TPI v3 (section 9.1a) is PROPOSED, undefined elsewhere, and the least mature of the three:** it is on record so the dynamic-data-control-system assurance class is captured, not because it is a finished instrument. Convention 108+ Art 8.2 is cited as v2's **baseline anchor**, not as an endorsement of the method by the treaty. This spec defines the record and vocabulary (version-agnostic); the TPI classes define the assessment methods over it, and the record and the assessments remain separable.
 - **DPV terms are reused, not owned.** All `dpv:`, `pd:`, `loc:`, `tech:`, `dct:`, `dcat:` terms are existing DPV/W3C terms reused per their published definitions. Section 6 and section 7 mark existing vs new explicitly; do not read a `dpv:`-prefixed term as authored here.
 - **No new interpretation of Convention 108+ is claimed** (README scope rule). Where an article is cited, the extension asserts only the modelling structure and the evidence criterion, never a legal reading the article does not already carry.
 - **I5, I6 anchor to the EU AI Act / Directive 2019/790**, not to Convention 108+. They are included because the AI-required information set spans instruments; they are not presented as treaty-derived.
@@ -343,7 +343,7 @@ Marking design-layer additions vs adopted standard text, so maturity is not over
 2. **Art 5.4 as a fresh class.** `conv108:CompatibleSecondaryPurposeBasis` is minted under `conv108:LawfulProcessingBasis` only, not as a subclass of any existing DPV secondary-use term, because the Art 5.4 compatibility test is treaty-specific (sections 3, 6).
 3. **I16 chain-of-notice roles.** Chain participants bind to ISO/IEC 22989 AI-lifecycle roles (AI designer, AI developer, AI producer / trainer, AI operator / deployer), each notice bound to party plus version and tested by the next participant (section 7.1).
 4. **I12 / I13 ANCR field reuse.** I12 and I13 reuse existing ANCR field names rather than minting `conv108:` duplicates: I12 maps to ANCR `notice_id` plus `notice_version_reference`; I13 maps to ANCR `receipt_id` (base `record_id`). Mapping in section 7.1; retired terms noted in section 6.
-5. **Assurance is class-bound (v1 / v2 / v3), not "Type 3."** The assessment method is fixed by the object under assessment, not stacked as a conformity-assessment tier on a single object: TPI v1 assesses a controller (automated 6-indicator probe); TPI v2 assesses a governance instrument, including this extension (Layer A 4 indicators plus Layer C governance-trust, baseline Convention 108+ Art 8.2, expert-authored; section 9); TPI v3 assesses an AI system across its lifecycle (chain-of-notice I16, provenance plus Art 5.4 I5/I3, live model-state I15, chain-scoped cross-border I8, dual-held custody I11; sections 9.1a, 9.3), and is a 0PN / ANCR in-development, PROPOSED class, undefined elsewhere, expert-authored. The three are additive, not alternatives. The record (I1-I16) is version-agnostic; only the assessment is class-bound (class taxonomy in section 9.3). The evidence criteria in section 8 remain the record-level pass/fail conditions common to all three classes. All three TPI methods are 0PN / ANCR alignment references, not adopted ISO text.
+5. **Assurance is class-bound (v1 / v2 / v3), not "Type 3."** The assessment method is fixed by the object under assessment, not stacked as a conformity-assessment tier on a single object: TPI v1 (Controller Control) assesses a controller (automated 6-indicator probe); TPI v2 (Regulatory Control) assesses a governance instrument, including this extension (Layer A 4 indicators plus Layer C governance-trust, baseline Convention 108+ Art 8.2, expert-authored; section 9); TPI v3 (Data Control) assesses a dynamic data control system across its lifecycle (chain-of-notice I16, provenance plus Art 5.4 I5/I3, live model-state I15, chain-scoped cross-border I8, dual-held custody I11; sections 9.1a, 9.3), and is an Open ANCR in-development, PROPOSED class, undefined elsewhere, expert-authored. The three are additive, not alternatives. The record (I1-I16) is version-agnostic; only the assessment is class-bound (class taxonomy in section 9.3). The evidence criteria in section 8 remain the record-level pass/fail conditions common to all three classes. All three TPI methods are Open ANCR alignment references, not adopted ISO text.
 
 ### 11.2 Open for review
 
@@ -351,3 +351,47 @@ These two items are open editorial questions for the working group.
 
 1. **Active-state enum (I15): fixed or extensible?** Should the active-state value set be the fixed three-value set `valid | invalid | suspended`, or an extensible, registered value list? Recommended default: the fixed set `valid | invalid | suspended`, taken from the real-time validity model in the Operational Transparency framing (the three states a receipt can be evaluated as at the point of reliance; section 4.2 / section 8.5 AC-ID-2). Question for the WG: adopt the fixed three-value set unless a fourth state (for example `expired` distinct from `invalid`, or `revoked` distinct from `suspended`) is needed, in which case make the enum extensible with a registered value list.
 2. **Acceptance-criteria location.** Should the evidence-first acceptance criteria (section 8) live here or move to `dpv-27560-conformance-tests.md` and be referenced by ID? Interim position: keep the summary acceptance criteria in section 8 of this spec, and place the full conformance tests in `dpv-27560-conformance-tests.md`, which references these ACs by ID (AC-SEQ-*, AC-BIND-*, AC-RCPT-*, AC-RECIP-*, AC-ID-*). Final split open for WG review.
+
+---
+
+## Annex A — Operational Transparency for AI system security and privacy (informative)
+
+Alignment reference: **FDIS ISO/IEC 27091, security and privacy in AI systems**, Annex B. This annex is included to show where the Convention 108+ DPV-style record and the ANCR TS 27560 Extension meet the operational-transparency requirements 27091 places on AI systems. It is an alignment reference, not adopted standard text.
+
+### B.2.1 Operational transparency
+
+Applies the ISO/IEC 29100:2024 principle of openness, transparency, and notice (29100 clause 6.8) to AI systems. It stresses two AI-specific realities:
+
+- **Lifecycle coverage:** new data can be collected, secondary purposes introduced, runtime inputs combined with external sources, retained, or routed through additional models and services — creating processing not present in the original design context.
+- **Distributed responsibility** across deployers, integrators, and third-party recipients.
+
+### B.2.2 Transparency-by-default
+
+Information about collection, inference, processing, and use of PII is provided **prior to use**, and stays "accurate, complete, and consistently delivered" as responsibilities move across stakeholders and time. Named provisions include: governance controls on how transparency information is synchronised (ISO/IEC 42001); an AI transparency taxonomy (ISO/IEC 12792); and "the use of consent record information structure as described in ISO/IEC 27560".
+
+### B.2.3 Allocation and propagation of transparency responsibilities (Table B.3)
+
+Splits obligations between **upstream** (model developer / provider) and **downstream** (deployer, service operator, integrator, API consumer, downstream licensee) stakeholders. For each it names the transparency information owed and the common failure mode. The recurring failure modes are the substance PWI 26689 can address: notices that do not reflect deployed routing and downstream processing; repurposing beyond disclosed purposes; missing disclosure of onward transfers; "transparency gap due to decoupling from the individual".
+
+### B.2.4 AI systems transparency mechanisms (Table B.4)
+
+Six mechanisms, each with a constraint, solution patterns, and the standards that support them. ISO/IEC 27560 is named in five of the six:
+
+| Mechanism | Constraint (paraphrased) | Standards named |
+|---|---|---|
+| Notice alignment with runtime behaviour | Notice stays accurate as processing paths vary; machine-readable, reusable notice structures | 29184, 12792, 27560 |
+| Consent and permission management across boundaries | Where consent is the legal basis, authorization is captured in auditable form bound to purpose, scope, and timing, enforceable across components; portable artifacts; review/modify over time | 27560, 27701 |
+| Model transparency propagation and change management | Downstream receives usable disclosures about capabilities, limits, material changes | 42001 |
+| Purpose limitation and supply-chain processing visibility | Stated purposes act as enforceable constraints across reuse, combination, onward transfer | 27560, 42001 |
+| Traceability, logging, minimization, retention | Processing steps reconstructable while maintaining minimization / retention | 42001, 27560 |
+| Rights, access, and actionable control | PII principals can act (access, objection, withdrawal) with routing to accountable entities | 27560, 27701 |
+
+### B.2.5 Mechanisms for notice and consent of AI systems
+
+The load-bearing clause for PWI 26689. Verbatim: "Mechanisms for notice and consent are expected to use record patterns that support objective verification, lifecycle traceability, and auditability. These record patterns can use the transparency taxonomy of ISO/IEC 12792 and can be implemented using record information structures based on ISO/IEC 27560."
+
+27091's Operational Transparency annex names ISO/IEC TS 27560:2023 — the consent record information structure used in the ANCR extension — as the record mechanism for, distinctly: transparency-by-default (B.2.2), runtime notice alignment (B.2.4), cross-boundary consent and permission management (B.2.4), purpose-limitation enforcement across the supply chain (B.2.4), traceability and logging (B.2.4), rights / access / objection / withdrawal routing (B.2.4), and notice and consent mechanisms generally (B.2.5).
+
+Each 27091 demand maps to the ANCR TS 27560 Extension for digital-identification consent: the Notice Receipt / Notice and Consent Records profile can be used to implement a standard AI transparency format for dynamic data control transparency.
+
+> **Note (implementation).** Implemented with a well-known-location RFC (`.well-known/transparency`) URI suffix for publishing Controller Identification Records (CIRs) and privacy transparency information, per the ANCR TS 27560 Extension (IETF "Well-Known Transparency Location" draft v1). Source: [`ancr-ts-27560-extension/ietf-iana-notice/IETF Well Known Transparency Location v1`](https://github.com/KantaraInitiative/ancr-wg/blob/16accf5368dc90ed67947450c494d27a4e7665ab/ancr-ts-27560-extension/ietf-iana-notice/IETF%20Well%20Known%20Transparency%20Location%20v1).
