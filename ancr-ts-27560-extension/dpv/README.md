@@ -1,46 +1,36 @@
-# ANCR WG → DPV (Convention 108+ legal model + evidence-first guidance)
+# ANCR WG contribution: Convention 108+ DPV-style legal model and evidence-first criteria
 
-This folder contains an ANCR Working Group contribution to the W3C Data Privacy Vocabulary (DPV) ecosystem, focused on:
+This folder holds an ANCR Working Group contribution to the W3C Data Privacy Vocabulary (DPV) ecosystem. It provides:
 
 - A Convention 108+ legal-model extension expressed in a DPV-style pattern.
-- Evidence-first requirements for notice-first transparency and digital consent governance in open-network digital identification contexts.
+- Evidence-first acceptance criteria for notice-first transparency and consent records in digital and open-network contexts.
 
 ## What this is
-- A Convention 108+ legal-model extension candidate that can be reviewed as a DPV LEGAL-style extension approach.
-- Companion material that turns known gaps in DPV:27560 guidance into closeable, testable requirements (sequence integrity, notice binding, receipt availability, recipient transparency, identifier governance).
+
+- A Convention 108+ legal-model extension candidate that can be reviewed as a DPV LEGAL-style extension.
+- Companion criteria that turn known gaps in the DPV guidance for ISO/IEC TS 27560:2023 into testable requirements: sequence integrity, notice binding, receipt availability, recipient transparency, and identifier governance.
 
 ## What this is not
+
 - Not an official W3C DPVCG deliverable.
-- Not a replacement for DPV specifications, DPV primer/guides, or DPV:27560 documentation.
-- Not an ISO-adopted profile. References to “ISO/IEC 27560 ‘Digital’ Consent Record Information Structure Profile” are alignment references and an implementation pattern concept used to keep evidence semantics coherent.
+- Not a replacement for DPV specifications, the DPV primer or guides, or the DPV guidance for ISO/IEC TS 27560:2023.
+- Not a Council of Europe text, a Kantara Initiative recommendation, or an ISO/IEC publication. References to Convention 108+, ISO/IEC TS 27560:2023, DPV, and the ANCR extension indicate alignment only.
 
-## Scope discipline (key rule)
-These documents do not propose new interpretations of Convention 108+.
-They provide:
-- (1) a traceable Convention 108+ modelling structure, and
-- (2) evidence-first acceptance criteria for guidance that claims to represent valid consent evidence in digital/open-network contexts.
+## Scope discipline
 
-## Present files (draft)
-The following artefact is present in this folder as a draft:
+These documents do not propose new interpretations of Convention 108+. They provide:
 
-- `conv108-dpv-extension-spec.md` — the Convention 108+ extension draft
-  specification (namespace, legal bases, rights, principles, transparency
-  requirements), plus the class-bound assurance layer (TPI v1 controller, v2
-  instrument, v3 AI system). Status: **0.1 draft**, unpublished, not yet reviewed
-  by Mark Lizar / ANCR-WG.
+1. a traceable Convention 108+ modelling structure, and
+2. evidence-first acceptance criteria for records that claim to represent valid consent evidence in digital and open-network contexts.
 
-## Planned files (not yet published in this folder)
-The following artefacts are in preparation and are not yet committed to this
-repository. This section will list them as links once they land:
+Article references identify relevant source provisions. Proposed technical requirements that go beyond the treaty text are identified as implementation requirements, not treaty obligations.
 
-- `conv108-dpv-legal-extension-explainer.md` — the method used to derive a
-  Convention 108+ DPV-style legal model and why evidence semantics are needed.
-- `dpv-27560-comments.md` — comment set for DPV:27560 guidance gaps that affect
-  evidence validity and interoperability.
-- `dpv-27560-conformance-tests.md` — evidence-first conformance tests for DPV:27560
-  guidance usage in open-network digital identification contexts.
+## Files
+
+- `conv108-dpv-extension-spec.md`. The Convention 108+ DPV-style legal-model extension draft: proposed namespace, legal bases (Article 5.2 and 5.4(b)), principles, rights (Article 9), transparency requirements (Article 8 and 14), a proposed information set for dynamic data and AI systems (I1 to I16), and evidence-based acceptance criteria. Status: 0.2 external review draft.
 
 ## Intended use
-- Support DPVCG evaluation and issue closure.
-- Support implementer review and regulator-grade “testability” discussions.
-- Provide a stable, citable package for review discussions that need to happen outside email threads and private docs.
+
+- Support DPVCG evaluation and issue review.
+- Support implementer and reviewer discussion of testability for records that carry consent evidence.
+- Provide a stable, citable package for review.
