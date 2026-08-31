@@ -1,49 +1,89 @@
-# CHANGELOG: ANCR ISO/IEC TS 27560:2023 Notice record extension
+# Changelog
 
-This changelog records revisions to `ancr-ts-27560 Notice Record Extension.md`. Until a canonical version is assigned by the ANCR Working Group, cite this document by its Git commit hash, not by a bare version string. Version numbers are not interchangeable across artefacts.
+All notable changes to the documents in `ancr-ts-27560-extension/` are recorded here.
 
-## [Unreleased]
+This changelog covers:
 
-### Restored
-- Restored the complete document body from the authoritative local source. The published upstream file was truncated at the end of clause 6.3 and was missing clause 7 (Notice record specifications 7.1 to 7.4, including the CIR field table, the Notice Receipt field table, and the Notice Event Log), clause 8 (Mandatory requirements), and Annexes A, B, C, and D. These are now present.
+- `ancr-ts-27560 Notice Record Extension.md`, the ANCR extension for ISO/IEC TS 27560:2023
+- `ancr-dpv/ancr-dpv-extension-spec.md`, the ANCR DPV Model Extension
+- `ancr-dpv/README.md`
 
-### Changed
-- Clause 1 (Scope): replaced the claim that TS 27560:2023 "adopted the Consent Receipt specification, which is completed here" with a contribution formulation: "an ISO technical specification to which the Consent Receipt specification was contributed, and which this profile extends." Rationale: the profile does not complete an ISO deliverable.
-- Foreword: corrected the cross-reference list so ISO/IEC WD 27566-2 is described as comments submitted, not a contribution to "Annex F." ISO/IEC TS 27568 remains listed as a contribution; FDIS 27091 Annex B.4 and ISO/IEC 27560 are unchanged.
+Version identifiers are document revisions. The receipt schema identifier is versioned separately and is stated in clause 7.3.4 of the extension.
 
-### Fixed (editorial)
-- Standardised the acronym for co-regulated digital identification to CDRI throughout the Introduction (removed the CDRI/CRDI inconsistency).
-- Corrected a broken sentence in the Introduction ("...assert claims about a person is called surveillance") into two sentences.
-- Added clause 4 "Symbols and abbreviated terms".
-- Renumbered the mislabelled "6.3.2 Required identifiers" heading to 7.3.3, its correct position within clause 7.
-- Reworded the clause 7.2.1 disclosure-set text to list its elements directly instead of by a self-reference to clause 7.2.1.
-- Corrected "ISO 31661" to "ISO 3166-1" in the recipient_jurisdictions field.
-- Changed "MUST NOT" to "SHALL NOT" in the account_id constraint, consistent with the keyword note in clause 2.2.
-- Corrected the "Annex B. 4" heading spacing to "B.4" and the matching cross-reference to ISO/IEC 27091 Annex B.4.
-- Reworded the receipt-reuse sentence in clause 7.2.2 to a formal register.
-- Removed a stray open parenthesis from the Annex A.2 heading.
+## [Extension v0.5, DPV companion v0.3] - external review draft
+
+### Summary
+
+Major revision of the extension, reconciled against the file committed at `a09559d5`, and a matching revision of the DPV companion. Two blocking decisions are settled, four changes break implementations built on the committed file, and a working group comment pass is applied.
+
+### Breaking changes, receipt schema `ancr-notice-receipt-2.0`
+
+1. `controller_identity_record_id` is renamed to `controller_identification_record_id`. The old name is deprecated, should be accepted on input for one revision cycle, and shall not be emitted. See 7.1.1.
+2. Each notice version shall be represented by a Notice Version Object carrying `notice_hash` and `published_at`, with a normative verification procedure. See 3.24 and 7.2.4. Tested by criterion C5 and mandatory requirement 3.
+3. The flat rule that no lawful basis is inferred from a receipt is replaced by a scoped default. See 7.2.2.
+4. Where authorization state is relied upon, it shall be carried by an Authorization State Object. See 3.25 and 7.2.5. Tested by criterion C8 and mandatory requirement 11.
+
+A relying party that encounters a receipt with an absent `schema_version`, or a major component below 2, interprets the record against the file published at `a09559d5` and does not apply the 7.2.2 default to it.
+
+### Decisions settled
+
+- **Online consent is the default interpretive context for digital identification.** Where the notice is an online notice in a digital identification context, the individual initiates the interaction in order to discover, and the interaction is a two factor online notice returning a bilateral Anchored Notice Receipt, the disclosure event defaults to online consent unless another basis is asserted in the receipt header. The basis for the default is the discovery act, with the physical sign as the established analogue.
+- **Offline consent presented through an online interface is outside the default.** Where identity and location are assumed rather than recorded, no default applies, the basis shall be asserted explicitly, a distinct authorization record is required, and the construction is captured in a controller held record of processing activities that is private and not accessible by default. Offline and online notice records and consent records are named distinctly and shall not be reported as equivalent artefacts.
+- **Identification, not identity.** The Controller Identification Record anchors identification carried out by a controller and does not describe the identity of an individual.
 
 ### Added
-- Revision line: instruction to cite by commit hash until a canonical version is fixed.
 
-### Added (seeding-document update, per the external-facing brief)
-- Clause 1: adopted the extension-voice scope statement (notice evidence artefacts for inspectable, verifiable digital transparency; does not replace 29184 or TS 27560; does not redefine consent).
-- Clause 1.1 (informative): what this document enables others to standardize, worded as enablement only, no downstream document named, no commitment or dependency.
-- Introduction: authority sequence stated once, in order (Convention 108+, 29100, 29184, TS 27560, minimum notice disclosure and anonymity by default, Transparency by Default).
-- Clause 3: added defined terms 3.15 notice, 3.16 online notice, 3.17 digital transparency, 3.18 consent, 3.19 online consent, 3.20 permission, 3.21 consent record, 3.22 two-factor online notice (2FN), each with notes to entry and no SHALL. Removed the SHALL from 3.12; the normative requirement stays in 5.1 C2.
-- Clause 4: symbols clause resolves CIR, ANCR, CDRI, MVCR, 2FN; 1FN not listed.
-- Clause 7.4.4: processing events specified distinctly from notice lifecycle events, with a minimum processing event record.
-- Clause 7.5: purpose specified as a recorded artefact, bound to legal authority, controller, and notice version. Unrecorded purpose is stated as a security defect in a note, with the conformance consequence in Clause 8.
-- Clause 7.6: relationship to consent records specified as a reference to the prior notice disclosure event only.
-- Clause 8: added mandatory requirements 7 (purpose) and 8 (processing events).
-- Clause 7.3.2: added a purpose field to the Notice Receipt field specification table, bound to notice_version_reference and the controller, per 7.5.
-- Clause 7.1.1A: corrected the duplicate 7.1.1 subclause number to 7.1.1A (the CIR field specification table).
+- Clause 4, abbreviated terms, including TPI-R, URI, and URL.
+- Clause 3.20 online consent, alongside the imported ISO/IEC TS 27560:2023 definition of consent at 3.19. Consent is not redefined.
+- Clause 3.24 and 7.2.4, the Notice Version Object, with `notice_url`, `notice_version_id`, `notice_hash`, `published_at`, and a verification procedure.
+- Clause 3.25 and 7.2.5, the Authorization State Object, with a per purpose state vocabulary, a record validity vocabulary, append only state changes, and a reconstruction procedure.
+- Clause 5, an explicit statement of the conformance relationship to ISO/IEC TS 27560:2023 in both directions.
+- Clause 7.3.4, the `schema_version` identifier and the major, minor, patch version rule.
+- Criterion C8, authorization state, and mandatory requirements 11 and 12.
+- Annex C, an `unresolved` lawful basis value, required by 7.2.2 and previously absent from the vocabulary.
+- Normative references to ISO 3166-1 and to the ISO 8601 series, both relied upon by 7.3.2.
 
-### Terminology
-- "terminology bridge" changed to "interoperability"; "lifecycle spine" and "evidence spine" changed to Notice Event Log and evidence model. The 2FN meaning is kept as two-factor online notice; 1FN is not introduced (see the 1FN/2FN collision decision in the brief).
+### Changed
 
-### Added (separate proposal): TPI-R conformance appendix
-- Annex E (informative): TPI-R conformance and compliance profile. Maps the extension's artefacts to the four TPI indicators (Timing, Required elements, Accessibility, Security integrity) and to the ANCR conformance indicators (CIR, Notice Receipt, Anchored Notice Receipt, Notice Event Log). E.3 states that a TPI-R score is a signal, not a conformance claim (conformance is defined by Clause 8 and 5.1). The choice between Kantara TPI-R and ANCR TPI-R is left as a working group decision recorded in E.1. Informative only; adds no normative requirement and no downstream dependency.
+- Verbal forms are written in lower case, as in the ISO/IEC Directives, Part 2. Upper case RFC 2119 keywords are removed. Meaning is unchanged.
+- `presented_at` is recorded using the ISO 8601 series format in the UTC time zone, replacing "with sufficient precision for dispute resolution".
+- `recipient_jurisdictions` and `transfer_mechanism` are Conditional rather than optional, matching the constraint that requires them for cross border transfer or disclosure.
+- The `notice_type` value `risk disclosure` becomes the single token `risk_disclosure`.
+- Clause 3.5 states issuance and material change as the minimum event types, with optional hooks for withdrawal and objection, matching 7.4.
+- Clause 3.3, 3.4, and 7.3 are reconciled: Notice Receipt is the artefact, Anchored Notice Receipt is a classification of it.
+- Exposure values are defined once in 7.3.2 as Public, Bilateral, and Restricted.
+- CRDI is used throughout. The committed file used both CDRI and CRDI.
+- 7.3.3 precedes 7.3.4 in document order.
 
-### Open for the editor
-- The field name `controller_identity_record_id` retains "identity" while the referenced artefact is the Controller Identification Record. Decision: keep the field name for this version, with an explaining note in 7.1; align it to "identification" in a future version.
+### DPV companion, v0.3
+
+- Retitled to ANCR DPV Model Extension, with a Convention 108+ legal model and an AI transparency profile.
+- Expresses the Authorization State Object specified in extension 7.2.5 rather than minting an independent active state property, so one state model applies across both documents.
+- Integrity binding resolves through the Notice Version Object, and AC-BIND-1 becomes a hash comparison test against `notice_hash` and `published_at`.
+- Verbal forms are written in lower case.
+- Restores the section heading structure, separators, and tables lost in the v0.2 commit.
+- Namespace moved out of the W3C DPVCG IRI space to `https://kantarainitiative.github.io/ancr-wg/ns/conv108plus#`, with the migration destination recorded.
+- Acceptance criteria added for the items that previously had none.
+- `ancr-dpv/README.md` corrected: it named a file that does not exist, stated the wrong status, and omitted two criteria.
+
+### Known open items
+
+Carried into external review and listed in the extension review notes.
+
+1. No JSON Schema for the receipt, the CIR, the event log entry, or the Authorization State Object.
+2. No conformance test procedure for C1 to C8.
+3. No LICENSE or IPR file in this directory. The IPR position is stated in the Foreword only.
+4. No canonicalization rule for computing `notice_hash`, so two conforming implementations can derive different version references for the same notice.
+5. No integrity mechanism for an anonymous receipt in place of the per principal HMAC in ISO/IEC TS 27560:2023 Annex E.
+6. `full receipt` and `reference receipt` are named in clause 1 but defined nowhere, and no field set is stated for either.
+7. The Notice Record has no field specification table, while the CIR and the receipt do.
+8. ISO/IEC 29184 is relied upon normatively by 6.1 and 7.6 while cited informatively, because free and open access would be required to list it as normative.
+9. The Foreword cites ISO/IEC TS 27568, ISO/IEC FDIS 27091, and ISO/IEC WD 27566-2, none of which appear in clause 2.
+10. No jurisdiction profiling rule for lawful basis enumerations that differ from Annex C.
+11. No clause level crosswalk to ISO/IEC PWI 26689.
+12. No field records which consent construction is in use, so the naming rule in 7.2.2 is normative but not machine testable.
+13. The canonical TPI-R variant for this extension is an open working group decision, and the TPI-R methodology has no citable reference in clause 2.
+
+## [Extension, committed file at `a09559d5`] - superseded
+
+The previously committed state of `ancr-ts-27560 Notice Record Extension.md`. It inferred no lawful basis from a receipt in any context, retained `controller_identity_record_id` with a deferral note, stated no schema version value, wrote verbal forms in upper case, and carried no integrity hash or publication time for a notice version.
